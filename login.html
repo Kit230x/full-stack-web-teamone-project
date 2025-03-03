@@ -9,7 +9,82 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>TeamOne Games</title>
+        <title>TeamOne Games Login</title>
+        <style>
+            img {
+                vertical-align: middle;
+                max-width: 100%;
+                display: inline-block;
+                border: 0;
+            }
+
+            .auth-title {
+                text-align: center;
+            }
+            .h3.font-700 {
+                font-weight: 700;
+            }
+
+            .auth-input-form-block {
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                flex-flow: column;
+                display: flex;
+            }
+
+            .auth-wrapper-block {
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            .auth-line-block {
+                grid-column-gap: 12px;
+                grid-row-gap: 12px;
+                border: 1px solid;
+                background-color: black;
+                color: #805085;
+                border-radius: 12px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 14px 24px;
+                font-family: Plus Jakarta Sans, sans-serif;
+                text-decoration: none;
+                display: flex;
+            }
+
+            .auth-link-block {
+                color: #808085;
+                font-family: Plus Jarkarta Sans, sans-serif;
+            }
+
+            a:any-link {
+                cursor: auto;
+            }
+
+            .auth-divider {
+                grid-column-gap: 26px;
+                grid-row-gap: 26px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            /*GOOGLE TEXT*/
+            .text-lg {
+                grid-column-gap: 8px;
+                grid-row-gap: 8px;
+                font-size: 18px;
+                line-height: 32px;
+                flex-flow: column;
+            }
+
+
+
+        </style>
     </head>
     <body>
          <!--NAVIGATION BAR-->
@@ -28,13 +103,13 @@
                 <div class="navbar-button-wrapper">
                   <div class="nav-desktop-button">
                     <a data-wf-button--varient="button-outline" href="login.html" class="button-fill w-variant-61bc9a0d-6ff0-dc82-f504-e085311c6802 w-button">Login</a>
-                    <a data-wf-button--varient="button-white-sm" href="sign-up.html" class="button-fill w-variant-b343637e-6926-f2e8-3bf0-555073400c9e w-button">Sign up</a>
+                    <a data-wf-button--varient="button-white-sm" href="sign-up.html" class="button-fill w-variant-b343637e-6926-f2e8-3bf0-555073400c9e">Sign up</a>
                   </div>
                 </div>
             </div>
           </div>
           <div class="container">
-            <div class="auth-layout">
+            <div data-w-id="822e8f8-5e26-db11-406b-e817289c367f" style="opacity: 1;" class="auth-layout">
                 <div class="auth-title">
                     <div class="h3 font-700">Welcome back</div>
                 </div>
@@ -51,7 +126,13 @@
                         <div class="text-lg">Facebook</div>
                     </a>
                 </div>
-                <div class="auth-divider"></div>
+                <div class="auth-divider">
+                    <div class="form-block w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                        class="form auth-fields-gap" data-wf-page-id="675d6b2a3ac8d2de4c923582" data-wf-element-id="8224e8f8-5e26-db11-406b-e817289c3694"
+                        data-turnstile-sitekey="0x4AAAAAAAQTptj25So4dx43e" aria-label="Email Form"></form>
+                    </div>
+                </div>
             </div>
             </div>
           </div>
