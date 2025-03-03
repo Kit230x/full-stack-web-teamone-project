@@ -1,0 +1,61 @@
+            /* NAVBAR STYLING*/
+            .menu {
+                color: white;
+                background-color: #222;
+            }
+            .navbar {
+                display: flex;
+            }
+
+            .nav-links {
+                display: flex;
+            }
+
+            /* LOGO IMAGE */
+            .t1-logo {
+                border-radius: 50%;
+                width: 5px;
+            }
+
+            /*HOME BUTTON STYLING*/
+            .home-button {
+
+            }
+
+            .home-button:hover{
+                cursor: pointer;
+            }
+
+            /*GAMES BUTTON STYLING*/
+            .game-button {
+
+            }
+            .game-button:hover{
+                cursor: pointer;
+            }
+
+            /*ABOUT US BUTTON STYLING*/
+            .about-button {
+                
+            }
+
+            .about-button:hover {
+                cursor: pointer;
+            }
+
+            /*LOGIN BUTTON STYLING*/
+            .login-button {
+
+            }
+
+            .login-button:hover {
+                cursor: pointer;
+            }
+
+            /*WECLOME TEXT*/ 
+            .welcome-text {
+                font-size: 50px;
+                text-align:center;
+                color: white;
+
+            }
