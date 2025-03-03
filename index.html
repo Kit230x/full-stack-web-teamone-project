@@ -12,6 +12,78 @@
 
         <!--TITLE NAME-->
         <title>T1 Games</title>
+
+        <style>
+          /* SPACE BETWEEN MAIN INFO*/
+          .hero-section {
+            z-index: 5;
+            padding-top: 80px;
+            padding-bottom: 24px;
+            position: relative;
+          }
+
+          /* Section with Welcome and Sign up*/
+          .hero-layout {
+            grid-column-gap: 60px;
+            grid-row-gap: 60px;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+
+          .hero-title-block {
+            grid-column-gap: 52px;
+            grid-row-gap: 52px;
+            text-align: center;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 904px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+          }
+
+          .hero-title-wrapper {
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            flex-flow: column;
+            display: flex;
+          }
+
+          .color_white {
+            color: white;
+            text-decoration: none;
+          }
+
+          .h1font-700 {
+            font-weight: 700;
+          }
+
+          .h1 {
+            font-family: Plus Jakarta Sans, sans-serif;
+            font-size: 80px;
+            line-height: 184px;
+            letter-spacing: -1.5px;
+          }
+
+          .hero-description-wrap {
+            max-width: 794px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          .text-xl {
+            font-size: 20px;
+            line-height: 26px;
+            opacity: 1;
+            
+          }
+
+        </style>
     </head>
 
     <body>
@@ -37,11 +109,29 @@
             </div>
           </div>
         </div>
-        <div>
-          <h1 class="welcome-text">
-            Welcome to T1 Games!
-          </h1>
-          <button class="play-now"></button>
+        <div class="page-wrapper">
+          <section class="hero-section">
+            <div class="container">
+              <div class="hero-layout">
+                <div class="hero-title-block">
+                  <div class="hero-title-wrapper">
+                    <div class="color-white">
+                      <h1 class="h1font-700">Welcome to TeamOne Games!</h1>
+                      </div>
+                      <div class="hero-description-wrap">
+                        <div class="text-xl">
+                          Choose and play from different games!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-wrap">
+                      <a href="sign-up.html" class="button-fill w-button">Sign up for free</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
     </body>
 </html>
