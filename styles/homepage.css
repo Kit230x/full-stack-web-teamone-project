@@ -1,61 +1,180 @@
-            /* NAVBAR STYLING*/
-            .menu {
-                color: white;
-                background-color: #222;
-            }
-            .navbar {
-                display: flex;
-            }
+/*WildCard*/
+* {
+  box-sizing: border-box;
+}
+/*body*/
+body {
+  color: var(--colors--neutral--2);
+  font-size:var(--font-size--text-default);
+  line-height: var(--line-height--text-default);
+}
 
-            .nav-links {
-                display: flex;
-            }
+a {
+  background-color: #0000;
+}
 
-            /* LOGO IMAGE */
-            .t1-logo {
-                border-radius: 50%;
-                width: 5px;
-            }
+.container {
+  width: 100%;
+  max-width: 1336px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: rgba(255,255,255,0.6);
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+}
 
-            /*HOME BUTTON STYLING*/
-            .home-button {
+.nav-menu-wrapper {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  color: rgba(255,255,255,0.6);
+  font-family: Inter, sans-serif;
+}
 
-            }
+/*LOGO SECTIONS*/
+.brand {
+  padding-left: 0;
+}
 
-            .home-button:hover{
-                cursor: pointer;
-            }
+.w-nav-brand {
+  color: #333;
+}
 
-            /*GAMES BUTTON STYLING*/
-            .game-button {
+a {
+  background-color: #0000;
+}
 
-            }
-            .game-button:hover{
-                cursor: pointer;
-            }
+img {
+  border: 0;
+  margin-right: 10px;
+}
 
-            /*ABOUT US BUTTON STYLING*/
-            .about-button {
-                
-            }
+.t1-games-logo {
+  display: block;
+  max-width: 100%;
+  width: 75px;
+  margin-left: 10px;
+}
 
-            .about-button:hover {
-                cursor: pointer;
-            }
+.navbar {
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+  display:block;
+  font-size: 16px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
 
-            /*LOGIN BUTTON STYLING*/
-            .login-button {
+.w.-nav {
+  background: #ddd;
+}
 
-            }
+/*Main Nav-Bar Sections*/
+.nav-menu {
+  row-gap: 32px;
+  column-gap: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  position: relative;
+}
 
-            .login-button:hover {
-                cursor: pointer;
-            }
+.w.nav-menu {
+  float: right;
+  position: relative;
+}
 
-            /*WECLOME TEXT*/ 
-            .welcome-text {
-                font-size: 50px;
-                text-align:center;
-                color: white;
+.nav-link:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#ffffff, #838383);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-            }
+.nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 40px 0;
+  text-transform: capitalize;
+  transition: all .5s;
+  font-family: Inter, sans-serif;
+}
+
+.w-nav-link {
+  vertical-align: top;
+  text-align: left;
+  margin: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-transform: capitalize;
+}
+
+.nav-desktop-buttons {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.button-fill {
+  color: white;
+  font-size: 18px;
+  border-radius: 500px;
+  line-height: 1.1em;
+  transition: all .5s;
+}
+
+/* LOGIN */
+.button-fill:where(.w-variant-61bc9a0d-6ff0-dc82-f504-e085311c6802) {
+  color: white;
+  background-color: #3898ec00;
+  background-image: none;
+  padding: 0;
+  transition: all .3s;
+  font-size: 18px;
+  margin-right: 10px;
+}
+/* SIGN-UP */
+.button-fill:where(.w-variant-b343637e-6926-f2e8-3bf0-555073400c9e) {
+  padding: 14px 24px;
+  font-size: 18px;
+  color: white;
+  background-image: linear-gradient(100deg,#201f1f, #726f6f);
+  border-radius: 500px;
+}
+
+.button-fill:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#ffffff, #838383);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all .5s;
+  line-height: 1.1em;
+}
+
+/* LOGIN */
+.w-button {
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+}
