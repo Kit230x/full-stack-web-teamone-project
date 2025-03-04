@@ -11,6 +11,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>TeamOne Games Login</title>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            a {
+                background-color: #0000;
+            }
+
+            :root {
+                --colors--neutral-2: #fff9;
+                --font-size--text-default: 16px;
+                --line-height--text-default: 1.72em;
+                --colors--white: white;
+                --colors--white-10: #ffffff1a;
+            }
+
             img {
                 vertical-align: middle;
                 max-width: 100%;
@@ -18,20 +34,104 @@
                 border: 0;
             }
 
+            div {
+                overflow-wrap: break-word;
+                -webkit-nbsp-mode: space;
+                line-break: after-white-space;
+                display: block;
+            }
+
+            body {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 16px;
+                font-family: Inter, sans-serif;
+                line-height: 27.52px;
+            }
+
+            input {
+                font: inherit;
+                margin: 0;
+                appearance: auto;
+                -webkit-rtl-ordering: logical;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                text-align: start;
+            }
+
+            input:is([type="button"], [type="submit"], [type="reset"]) {
+                align-items: flex-start;
+                text-align: center;
+                padding-block-start: 2px;
+                padding-block-end: 3px;
+                padding-inline-start: 6px;
+                text-wrap-mode: nowrap;
+                white-space-collapse: preserve;
+            }
+
             .auth-title {
                 text-align: center;
             }
+
+            /*WELCOME BACK FONT*/
             .h3.font-700 {
                 font-weight: 700;
             }
 
+            .h3 {
+                font-family: Plus Jakarta Sans, sans-serif;
+                font-size: 32px;
+                letter-spacing: -0.5px;
+            }
+
+            /*CONTAINER FOR PAGE*/
+            .auth-section {
+                z-index: 1;
+                margin-top: -140px;
+                padding-top: 200px;
+                padding-bottom: 80px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            /* CONTAINER THAT HAS MAIN INFO*/ 
+            .auth-layout {
+                grid-column-gap: 32px;
+                grid-row-gap: 32px;
+                border: 1px solid;
+                background-color: rgb(14, 16, 17);
+                border-radius: 20px;
+                flex-direction: column;
+                max-width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 60px;
+                display: flex;
+                overflow: hidden;
+            }
+
+            /*WELCOME BACK SECTION*/
+            .auth-title {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 16px;
+            }
+
+            .h3.font-700 {
+                font-weight: 700;
+            }
+
+
+            /*INPUT BLOCKS*/
             .auth-input-form-block {
                 grid-column-gap: 24px;
                 grid-row-gap: 24px;
-                flex-flow: column;
+                flex-direction: column;
                 display: flex;
             }
 
+            /* CONTAINERS FOR GOOGLE AND FACEBOOK*/
             .auth-wrapper-block {
                 grid-column-gap: 20px;
                 grid-row-gap: 20px;
@@ -40,12 +140,13 @@
                 display: flex;
             }
 
-            .auth-line-block {
+            /*CONTAINER FOR GOOGLE SECTION*/
+            .auth-link-block {
                 grid-column-gap: 12px;
                 grid-row-gap: 12px;
-                border: 1px solid;
-                background-color: black;
-                color: #805085;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background-color: rgb(4, 4, 3);
+                color: #808085;
                 border-radius: 12px;
                 justify-content: center;
                 align-items: center;
@@ -56,21 +157,28 @@
                 display: flex;
             }
 
-            .auth-link-block {
-                color: #808085;
-                font-family: Plus Jarkarta Sans, sans-serif;
+            .w-inline-block {
+                max-width: 100%;
             }
 
-            a:any-link {
-                cursor: auto;
-            }
-
+            /* DIVIDER BETWEEN GOOGLE/FACEBOOK*/
             .auth-divider {
                 grid-column-gap: 26px;
                 grid-row-gap: 26px;
                 justify-content: center;
                 align-items: center;
                 display: flex;
+                opacity: 1;
+            }
+
+            .horizontal-border{
+                background-color: #c8c8c8;
+                width: 100%;
+                height: 1px;
+            }
+
+            .font-500 {
+                font-weight: 500;
             }
 
             /*GOOGLE TEXT*/
@@ -80,6 +188,142 @@
                 font-size: 18px;
                 line-height: 32px;
                 flex-flow: column;
+            }
+
+            /*AUTH FORMAT*/
+            .form-block {
+                margin-bottom: 0;
+            }
+
+            .w-form {
+                margin: 0 0 15px;
+            }
+
+            .form {
+                flex-flow: column;
+                display: flex;
+            }
+
+            form {
+                margin-top: 0em;
+            }
+
+            .form.auth-fields-gap {
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+            }
+
+            .form-fields-wrap {
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                flex-flow: column;
+                display: flex;
+            }
+
+            .forms-field-wrapper {
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            .forms-fields-wrapper.column {
+                flex-flow: column;
+            }
+
+            .form-input-field {
+                border: 1px solid rgbg(255, 255, 255, 0.1);
+                color: white;
+                border-radius: 12px;
+                margin-bottom: 0;
+                padding: 28px 24px;
+                font-size: 18px;
+                line-height: 1.8em;
+            }
+
+            .form-input-field:lang(en) {
+                background-color: rgb(4, 4, 3);
+            }
+
+            .form-fields-wrapper.column {
+                flex-flow: column;
+            }
+
+            input::placeholder {
+                white-space-collapse: preserve;
+                text-wrap-mode: nowrap;
+                overflow-wrap: normal;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                line-height: inital;
+            }
+
+            ::placeholder {
+                -webkit-text-security: none;
+                color: darkgray;
+                direction: inherit;
+                pointer-events: none;
+                text-orientation: inherit;
+                writing-mode: inherit;
+            }
+
+            .w-input {
+                width: 100%;
+                height: 38px;
+                display: block;
+            }
+
+            input::-webkit-textfield-decoration-container {
+                display: flex;
+                align-items: center;
+                content: none;
+                writing-mode: inherit;
+            }
+
+            .form-button-block {
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            input.w-button {
+                --webkit-appearance: button;
+            }
+
+            .button-white {
+                background-color: rgb(255, 255, 255);
+                color: #111314;
+                border-radius: 500px;
+                width: 100%;
+                padding: 16px 80px;
+                font-weight: 500;
+            }
+
+            .w-button {
+                line-height: inherit;
+                border: 0;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .auth-redirect-link-wrapper {
+                text-align: center;
+                color: #808085;
+                flex-flow: column; 
+                justify-content: center;
+                display: flex;
+
+            }
+
+            .auth-link {
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+                transition: all .5s;
+                line-height: 32px;
             }
     
         </style>
@@ -92,8 +336,7 @@
               <a href="index.html" aria-current="page" class="brand w-nav-brand w--current" aria-label="Home">
                 <img src="images/t1-games-logo.png" class="t1-games-logo">
               </a>
-
-              <nav role="navigation" class="nav-menu w-nav-menu">
+              <nav role="navigation" class="nav-menu w-nav-menu" >
                 <a href="index.html" class="nav-link w-nav-link w--current">Home</a>
                 <a href="about-us.html" class="nav-link w-nav-link w--current">About Us</a>
                 <a href="games-preview-page.html" class="nav-link w-nav-link w--current">Games</a>
@@ -105,7 +348,8 @@
                   </div>
                 </div>
             </div>
-          </div>
+        </div>
+        <div class="auth-section">
           <div class="container">
             <div data-w-id="822e8f8-5e26-db11-406b-e817289c367f" style="opacity: 1;" class="auth-layout">
                 <div class="auth-title">
@@ -113,9 +357,9 @@
                 </div>
             <div class="auth-input-form-block">
                 <div class="auth-wrapper-block">
-                    <a href="https://google.com" target="_blank" class="autho-link-block w-inline-block">
-                        <img src="https://cdn.prod.website-files.cmo/6753dc0c6ca8572305da90ba1/675d0659a64f7112fed8c326_google.svg"
-                        loading="lazy" alt>
+                    <a href="https://google.com" target="_blank" class="auth-link-block w-inline-block">
+                        <img src="https://cdn.prod.website-files.com/6753dc0c6ca857205da90ba1/675d0659a64f7112fed8c326_google.svg" 
+                        loading="lazy" alt="">
                         <div class="text-lg">Google</div>
                     </a>
                     <a href="https://facebook.com" target="_blank" class="auth-link-block w-inline-block">
@@ -124,15 +368,72 @@
                         <div class="text-lg">Facebook</div>
                     </a>
                 </div>
-                <div class="auth-divider">
-                    <div class="form-block w-form">
-                        <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                        class="form auth-fields-gap" data-wf-page-id="675d6b2a3ac8d2de4c923582" data-wf-element-id="8224e8f8-5e26-db11-406b-e817289c3694"
-                        data-turnstile-sitekey="0x4AAAAAAAQTptj25So4dx43e" aria-label="Email Form"></form>
+                <div data-w-id="8224e8f8-5e26-db11-406b-e817289c368d" class="auth-divider" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;">
+                    <div class="horizontal-border"></div>
+                    <div class="font-500">OR</div>   
+                    <div class="horizontal-border"></div>
+                </div>
+                        <div class="auth-form-block">
+                            <div class="form-block w-form">
+                                <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                                class="form auth-fields-gap" data-wf-page-id="675d6b2a3ac8d2de4c923582" data-wf-element-id="8224e8f8-5e26-db11-406b-e817289c3694"
+                                data-turnstile-sitekey="0x4AAAAAAAQTptj25So4dx43e" aria-label="Email Form">
+                                    <div class="form-fields-wrap">
+                                        <div data-w-id="8224e8f8-5e26-db11-406b-e817289c3696" style="opacity: 1; transform: translate3x(0px, 0px, 0px) scale3d(1, 1,1)
+                                        rotateX(0deg) rotateY (0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve3d;" class="form-fields-wrapper">
+                                            <input class="form-input-field w-input" maxlength="256" name="Sign-In-Name" data-name="Sign In Name" placeholder="First Name"
+                                            type="text" id="Sign-In-Name" required>
+                                            <div useragentpart="placeholder"></div>
+                                            </input>
+                                        </div>
+                                        <div data-w-id="8224e8f8-5e26-db11-406b-e817289c3699" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                                        rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="form-field-wrapper column">
+                                            <input class="form-input-field w-input" maxlength="256" name="Sign-In-Email" data-name="Sign In Email" placeholder="Email addres"
+                                            type="email" id="Sign-In-Email" required>
+                                                <div useragenpart="placeholder"></div>
+                                                <div contenteditable="plaintext-only"></div>
+                                            </input>
+                                            <input class="form-input-field w-input" maxlength="256 name=Sign-In-Password" data-name="Sign In Password"
+                                            placeholder="Password" type="password" id="Sign-In-Password" requied>
+                                                <div useragentpart="placeholder"></div>
+                                                <div useragentpart="-webkit-textfield-decoration-container">
+                                                    <div>
+                                                        <div contenteditable="plaintext-only"></div>
+                                                    </div>
+                                                </div>
+                                            </input>
+                                        </div>
+                                    </div>
+                                <div data-w-id="8224e8f8-5e26-db11-406b-e817289c369c" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="form-button-block">
+                                    <input type="submit" data-wait="Please wait..." class="button-white w-button" value="Sign up for free"> </input>
+                                </div>
+                                <div>
+                                    <div>
+                                        <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/
+                                        auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge"
+                                        style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div data-w-id="822e8f8-8e26-db11-406b-e817289c36a4" class="auth-redirect-link-wrapper">
+                            <div class="text-lg">
+                                Don't have an account ? 
+                                <a href="sign-up.html" class="auth-link">Sign up</a>
+                                <br>
+                            </div>
+                            <a href="#" class="auth-link w-inline-block">
+                                <div>Forgot Password</div>
+                            </a>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </body>
 </html>
