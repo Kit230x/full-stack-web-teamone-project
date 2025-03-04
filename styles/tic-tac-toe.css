@@ -114,7 +114,8 @@ svg.play-circle{
     display: block;
     max-width: 100%;
     width: 75px;
-    margin-left: 10px;
+    margin-right: 100px;
+
   }
   
   .navbar {
