@@ -1,7 +1,8 @@
 * {
-    font-family: sans-serif;
     box-sizing: border-box;
-}
+    font-family: Inter, sans-serif;
+  }
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -13,7 +14,6 @@
     width: 854px;
 }
 
-/*HOW TO PLAY STYLING*/
 .how-to-play-instructions{
     font-size: 16px;
     background: black;
@@ -53,10 +53,8 @@
 #play-game {
     aspect-ratio: 16/9;
     background-color: #efefef;
-    /* cursor: pointer; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    cursor: pointer;
+    display: grid;
     margin: 0 auto;
     place-items: center;
     position: relative;
@@ -68,33 +66,6 @@ svg.play-circle{
     width: 96px;
     height: 96px;
     fill: grey;
-}
-
-.choices{
-    margin-bottom: 30px;
-    align-items: center;
-}
-.choices button {
-    font-size: 6rem;
-    min-width: 125px;
-    margin: 50px 10px;
-    border-radius: 50%;
-    background-color: black;
-    cursor: pointer;
-}
-
-.choices button:hover{
-    background-color: gray;
-    transition-duration: 0.3s;
-}
-
-#playerDisplay, #computerDisplay{
-    font-size: 2.5rem;
-}
-
-#resultDisplay{
-    font-size: 5rem;
-    margin: 30px 0;
 }
 
   /*body*/
@@ -116,8 +87,7 @@ svg.play-circle{
     padding-right: 20px;
     padding-right: 20px;
   }
-
- /* NAV BAR STYLING*/ 
+  
   .nav-menu-wrapper {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -339,4 +309,5 @@ svg.play-circle{
       cursor: pointer;
       background-clip: text;
   }
+  
   
