@@ -5,26 +5,35 @@
         <!--STYLING-->
         <!--CSS STLYE REFERENCE-->
         <link rel="stylesheet" href="styles/login-signup.css">
+        
         <!--GOOGLE FONT-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- PAGE TITLE -->
         <title>TeamOne Games Login</title>
     </head>
 
     <body style="background-color: black">
-         <!--NAVIGATION BAR-->
+       
+        <!--NAVIGATION BAR-->
     <header class="navbar w-nav" style="background-color: rgb(0, 0, 0);">
         <div class ="container">
             <div class="nav-menu-wrapper">
+                <!-- LOGO LINKING TO HOME-->
               <a href="index.html" aria-current="page" class="brand w-nav-brand w--current" aria-label="Home">
                 <img src="images/t1-games-logo.png" class="t1-games-logo">
               </a>
+
+              <!-- NAV LINKS-->
               <nav role="navigation" class="nav-menu w-nav-menu" >
                 <a href="index.html" class="nav-link w-nav-link w--current">Home</a>
                 <a href="about-us.html" class="nav-link w-nav-link w--current">About Us</a>
                 <a href="games-preview-page.html" class="nav-link w-nav-link w--current">Games</a>
               </nav>
+
+              <!-- LOGIN AND SIGN UP BUTTONS -->
                 <div class="navbar-button-wrapper">
                   <div class="nav-desktop-button">
                     <a data-wf-button--varient="button-outline" href="login.html" class="button-fill w-variant-61bc9a0d-6ff0-dc82-f504-e085311c6802 w-button">Login</a>
@@ -35,19 +44,27 @@
         </div>
     </header>
 
+        <!-- MAIN CONTENT SECTION: AUTHENTICATION FORM -->
         <main class="auth-section">
           <div class="container">
             <div data-w-id="822e8f8-5e26-db11-406b-e817289c367f" style="opacity: 1;" class="auth-layout">
+                
+                <!-- TITLE FOR LOGIN-->
                 <div class="auth-title">
                     <h3 class="h3 font-700">Welcome back</h3>
                 </div>
-                
+            
+                <!-- AUTHENTICATION METHOD OPTIONS -->
             <div class="auth-input-form-block">
                 <div class="auth-wrapper-block">
+
+                    <!-- GOOGLE LOGIN SECTION -->
                     <a href="https://google.com" target="_blank" class="auth-link-block w-inline-block">
                         <img src="https://cdn.prod.website-files.com/6753dc0c6ca857205da90ba1/675d0659a64f7112fed8c326_google.svg" loading="lazy" alt="Google">
                         <div class="text-lg">Google</div>
                     </a>
+
+                    <!-- FACEBOOK LOGIN BUTTON -->
                     <a href="https://facebook.com" target="_blank" class="auth-link-block w-inline-block">
                         <img src="https://cdn.prod.website-files.com/6753dc0c6ca857205da90ba1/675d07305037e641ae210dbd_Facebook.svg" 
                         loading="lazy" alt>
@@ -55,29 +72,41 @@
                     </a>
                 </div>
 
+                <!-- DIVIDED BETWEEN LOGIN OPTIONS -->
                 <div class="auth-divider">
                     <div class="horizontal-border"></div>
                     <div class="font-500">OR</div>   
                     <div class="horizontal-border"></div>
                 </div>
 
+                    <!-- EMAIL LOGIN FORM-->
                     <div class="auth-form-block">
                         <div class="form-block w-form">
                             <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form auth-fields-gap" aria-label="Email Form">
                                 <div class="form-fields-wrap">
+                                    <!-- USERNAME (FIRST NAME) INPUT FIELD-->
                                     <input class="form-input-field w-input" maxlength="256" name="Sign-In-Name" data-name="Sign In Name" placeholder="First Name" type="text" id="Sign-In-Name" required>
+                                    
+                                    <!-- EMAIL INPUT FIELD -->
                                     <input class="form-input-field w-input" maxlength="256" name="Sign-In-Email" data-name="Sign In Email" placeholder="Email address" type="email" id="Sign-In-Email" required>
+                                    
+                                    <!-- PASSWORD INPUT FIELD-->
                                     <input class="form-input-field w-input" maxlength="256" name="Sign-In-Password" data-name="Sign In Password" placeholder="Password" type="password" id="Sign-In-Password" required>
                                 </div>
+
+                                <!-- SECTION FOR CLOUDFLARE SECURITY WIDGET (EVENTUALLY)-->
                                 <div>
                                     <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge" style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true"></iframe>
                                 </div>
                             </form>
                         </div>
                     </div>
+
+                    <!-- SIGN UP BUTTON (ALERTERNATIVE)-->
                         <div class="form-button-block">
                             <a data-wf-button--varient="button-white-sm" href="sign-up.html" class="button-fill w-variant-b343637e-6926-f2e8-3bf0-555073400c9e">Sign up for free</a>
                         </div>
+
                             <div>
                                 <div>
                                     <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge" style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true"></iframe>
@@ -85,6 +114,8 @@
                             </form>
                         </div>
                     </div>
+                                            <!-- REDRECT TO SIGN UP OR FORGOT PASSWORD -->
+                        <!-- REDRECT TO SIGN UP OR FORGOT PASSWORD -->
                         <div class="auth-redirect-link-wrapper">
                             <div class="text-lg">
                                 Don't have an account ? 
