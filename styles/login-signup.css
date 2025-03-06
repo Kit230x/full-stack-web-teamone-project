@@ -336,6 +336,7 @@ form {
 }
 
 .forms-fields-wrapper.column {
+    gap: 20px;
     flex-flow: column;
     display: flex;
 }

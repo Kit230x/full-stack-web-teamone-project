@@ -11,9 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>TeamOne Games Login</title>
     </head>
+
     <body style="background-color: black">
          <!--NAVIGATION BAR-->
-      <div class="navbar w-nav" style="background-color: rgb(0, 0, 0);">
+    <header class="navbar w-nav" style="background-color: rgb(0, 0, 0);">
         <div class ="container">
             <div class="nav-menu-wrapper">
               <a href="index.html" aria-current="page" class="brand w-nav-brand w--current" aria-label="Home">
@@ -32,17 +33,19 @@
                 </div>
             </div>
         </div>
-        <div class="auth-section">
+    </header>
+
+        <main class="auth-section">
           <div class="container">
             <div data-w-id="822e8f8-5e26-db11-406b-e817289c367f" style="opacity: 1;" class="auth-layout">
                 <div class="auth-title">
-                    <div class="h3 font-700">Welcome back</div>
+                    <h3 class="h3 font-700">Welcome back</h3>
                 </div>
+                
             <div class="auth-input-form-block">
                 <div class="auth-wrapper-block">
                     <a href="https://google.com" target="_blank" class="auth-link-block w-inline-block">
-                        <img src="https://cdn.prod.website-files.com/6753dc0c6ca857205da90ba1/675d0659a64f7112fed8c326_google.svg" 
-                        loading="lazy" alt="">
+                        <img src="https://cdn.prod.website-files.com/6753dc0c6ca857205da90ba1/675d0659a64f7112fed8c326_google.svg" loading="lazy" alt="Google">
                         <div class="text-lg">Google</div>
                     </a>
                     <a href="https://facebook.com" target="_blank" class="auth-link-block w-inline-block">
@@ -51,59 +54,38 @@
                         <div class="text-lg">Facebook</div>
                     </a>
                 </div>
-                <div data-w-id="8224e8f8-5e26-db11-406b-e817289c368d" class="auth-divider" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                transform-style: preserve-3d;">
+
+                <div class="auth-divider">
                     <div class="horizontal-border"></div>
                     <div class="font-500">OR</div>   
                     <div class="horizontal-border"></div>
                 </div>
-                        <div class="auth-form-block">
-                            <div class="form-block w-form">
-                                <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                                class="form auth-fields-gap" data-wf-page-id="675d6b2a3ac8d2de4c923582" data-wf-element-id="8224e8f8-5e26-db11-406b-e817289c3694"
-                                data-turnstile-sitekey="0x4AAAAAAAQTptj25So4dx43e" aria-label="Email Form">
-                                    <div class="form-fields-wrap">
-                                        <div data-w-id="8224e8f8-5e26-db11-406b-e817289c3696" style="opacity: 1; transform: translate3x(0px, 0px, 0px) scale3d(1, 1,1)
-                                        rotateX(0deg) rotateY (0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve3d;" class="form-fields-wrapper">
-                                            <input class="form-input-field w-input" maxlength="256" name="Sign-In-Name" data-name="Sign In Name" placeholder="First Name"
-                                            type="text" id="Sign-In-Name" required>
-                                            <div useragentpart="placeholder"></div>
-                                            </input>
-                                        </div>
-                                        <div data-w-id="8224e8f8-5e26-db11-406b-e817289c3699" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                                        rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="form-field-wrapper column">
-                                            <input class="form-input-field w-input" maxlength="256" name="Sign-In-Email" data-name="Sign In Email" placeholder="Email addres"
-                                            type="email" id="Sign-In-Email" required>
-                                                <div useragenpart="placeholder"></div>
-                                                <div contenteditable="plaintext-only"></div>
-                                            </input>
-                                            <input class="form-input-field w-input" maxlength="256 name=Sign-In-Password" data-name="Sign In Password"
-                                            placeholder="Password" type="password" id="Sign-In-Password" requied>
-                                                <div useragentpart="placeholder"></div>
-                                                <div useragentpart="-webkit-textfield-decoration-container">
-                                                    <div>
-                                                        <div contenteditable="plaintext-only"></div>
-                                                    </div>
-                                                </div>
-                                            </input>
-                                        </div>
-                                    </div>
-                                <div data-w-id="8224e8f8-5e26-db11-406b-e817289c369c" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="form-button-block">
-                                    <a data-wf-button--varient="button-white-sm" href="sign-up.html" class="button-fill w-variant-b343637e-6926-f2e8-3bf0-555073400c9e">Sign up</a>
+
+                    <div class="auth-form-block">
+                        <div class="form-block w-form">
+                            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form auth-fields-gap" aria-label="Email Form">
+                                <div class="form-fields-wrap">
+                                    <input class="form-input-field w-input" maxlength="256" name="Sign-In-Name" data-name="Sign In Name" placeholder="First Name" type="text" id="Sign-In-Name" required>
+                                    <input class="form-input-field w-input" maxlength="256" name="Sign-In-Email" data-name="Sign In Email" placeholder="Email address" type="email" id="Sign-In-Email" required>
+                                    <input class="form-input-field w-input" maxlength="256" name="Sign-In-Password" data-name="Sign In Password" placeholder="Password" type="password" id="Sign-In-Password" required>
                                 </div>
                                 <div>
-                                    <div>
-                                        <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/
-                                        auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge"
-                                        style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true">
-                                        </iframe>
-                                    </div>
+                                    <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge" style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true"></iframe>
                                 </div>
                             </form>
-                            </div>
                         </div>
-                        <div data-w-id="822e8f8-8e26-db11-406b-e817289c36a4" class="auth-redirect-link-wrapper">
+                    </div>
+                        <div class="form-button-block">
+                            <a data-wf-button--varient="button-white-sm" href="sign-up.html" class="button-fill w-variant-b343637e-6926-f2e8-3bf0-555073400c9e">Sign up for free</a>
+                        </div>
+                            <div>
+                                <div>
+                                    <iframe src="https://challenges.cloudflare.com/cdn-cgi/challeng-flatform/h/b/turnstile/if/ov2/ac0/rcv/gziyc/0x4AAAAAAAATptj2So4dx43e/auto/fBE/auto_expire/normal/auto/" allow="cross-origin-isolated; fullscreen; autoplay" sandbox="allow-same-origin" id="cf-chl-widget-gziyc" tabindex="-1" title="Widget containing a Cloudflare security challenge" style="border: medium; overflow: hidden; width: 0px; height: 0px; position: absolute; visibility: hidden;" aria-hidden="true"></iframe>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                        <div class="auth-redirect-link-wrapper">
                             <div class="text-lg">
                                 Don't have an account ? 
                                 <a href="sign-up.html" class="nav-link ">Sign up</a>
@@ -114,9 +96,9 @@
                             </a>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </main>
+</body>
 </html>
