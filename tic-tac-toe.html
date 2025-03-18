@@ -50,10 +50,20 @@
                 <h1> Tic-Tac-Toe </h1>
                 <h4> What Difficulty would you like?
                 </h4> 
-                <h5>
-                  <button onclick="tttDifficultySet('Easy')">Easy</button>
+                <h5 class="difficulty-choices">
+                  
+                    <input type="radio" name="Difficulty" value="Easy" onchange="tttDifficultySet('Easy')">Easy
+                    <label for="easy">Easy</label>
+                    <input type="radio" name="Difficulty" value="Medium" onchange="tttDifficultySet('Medium')">Medium
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="Difficulty" value="Impossible" onchange="tttDifficultySet('Impossible')">Impossible
+                    <label for="impossible">Impossible</label>
+                    <input type="radio" name="Difficulty" value="Hotseat Play" onchange="tttDifficultySet('Hotseat Play')">Hotseat Play
+                    <label for="hotseat">Hotseat Play</label>
+                  <!-- <button onclick="tttDifficultySet('Easy')">Easy</button>
                   <button onclick="tttDifficultySet('Medium')">Medium</button>
                   <button onclick="tttDifficultySet('Impossible')">Impossible</button>
+                  <button onclick="tttDifficultySet('Hotseat Play')">Hotseat Play</button> -->
                 </h5>
                 <section id="gamearea">
                     
