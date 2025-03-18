@@ -233,12 +233,13 @@ svg.play-circle {
   border-radius: 10px;
   cursor: pointer;
 }
-/* .difficulty-choices input[type="radio"]{
+.difficulty-choices input[type="radio"]{
   display: none;
-} */
+}
 
-.difficulty-choices input[type="radio"]:checked + label{
+.difficulty-choices input[type="radio"]:checked + label {
   background-color: #0056b3;
+  background-image: none;
 }
 
 .choices button {
