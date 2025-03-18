@@ -179,6 +179,10 @@ body {
 }
 
 #gamearea {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+
+
   z-index: 1001;
   position: relative;
 }
@@ -186,7 +190,7 @@ body {
 #play-game {
   aspect-ratio: 16/9;
   background-color: #efefef;
-  cursor: pointer;
+  /* cursor: pointer; */
   display: grid; 
   place-items: center;
   position: relative;
@@ -250,13 +254,18 @@ svg.play-circle {
   cursor: pointer;
 }
 .cell{
+  color: black;
+  text-align: center;
   width: 75px;
   height: 75px;
   border: 2px solid;
+  border-color: black;
   box-shadow: 0 0 0 2px;
   line-height: 75px;
-  font-size: 50px;
+  font-size: 65px;
   cursor: pointer;
+  
+  
 
 }
 
@@ -264,7 +273,12 @@ svg.play-circle {
   display: grid;
   grid-template-columns: repeat(3, auto);
   width: 225px;
-  margin: auto;
+  margin: 50px 200px auto;
+  text-align: center;
+}
+
+#statusText{
+  color: black;
 }
 
 /* .difficulty-choices button{
