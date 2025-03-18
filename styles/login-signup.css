@@ -1,4 +1,4 @@
-/* Base Styles */
+/* BASE STYLING */
 * {
     box-sizing: border-box;
 }
@@ -74,7 +74,7 @@ input:is([type="button"], [type="submit"], [type="reset"]) {
     --color--white-10: #ffffff1a;
 }
 
-/* Typography Styling */
+/* TYPOGRAPHY STYLING */
 .h3, .h1 {
     font-family: Plus Jkarta Sans, sans-serif;
     font-weight: 700;
@@ -187,7 +187,7 @@ input:is([type="button"], [type="submit"], [type="reset"]) {
     background-image: linear-gradient(50deg, #959595, #676565);
 }
 
-/*HERO SECTION; SECOND CONTAINER */
+/* HERO SECTION; SECOND CONTAINER */
 .hero-section {
     z-index: 5;
     padding: 80px 0 24px;
@@ -258,7 +258,7 @@ input:is([type="button"], [type="submit"], [type="reset"]) {
     display: flex;
 }
 
-/* CONTAINERS FOR GOOGLE AND FACEBOOK*/
+/* CONTAINERS FOR GOOGLE AND FACEBOOK */
 .auth-wrapper-block {
     gap: 20px;
     justify-content: space-between;
@@ -266,7 +266,7 @@ input:is([type="button"], [type="submit"], [type="reset"]) {
     display: flex;
 }
 
-/*CONTAINER FOR GOOGLE SECTION*/
+/* CONTAINER FOR GOOGLE SECTION */
 .auth-link-block {
     gap: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -300,7 +300,7 @@ input:is([type="button"], [type="submit"], [type="reset"]) {
     height: 1px;
 }
 
-/*AUTH FORMAT*/
+/* AUTH FORMAT */
 .form-block {
     margin-bottom: 0;
 }

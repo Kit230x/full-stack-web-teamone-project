@@ -97,7 +97,7 @@ svg.play-circle{
     margin: 30px 0;
 }
 
-  /*body*/
+  /* BODY */
   body {
     color: var(--colors--neutral--2);
     font-size:var(--font-size--text-default);
@@ -107,7 +107,7 @@ svg.play-circle{
     height: 100%;
   }
   
-  /* Container for website */
+  /* CONTAINER  */
   .container {
     width: 100%;
     max-width: 1336px;
@@ -162,7 +162,7 @@ svg.play-circle{
     background-color: black;
   }
   
-  /*Main Nav-Bar Sections*/
+  /* MAIN NAV SECTIONS */
   .nav-menu {
     row-gap: 32px;
     column-gap: 32px;
@@ -235,7 +235,7 @@ svg.play-circle{
     display: inline-block;
   }
   
-  /* SIGN-UP DOES NOT CONTAIN button-fill*/
+  /* SIGN-UP DOES NOT CONTAIN button-fill */
   .button-fill:where(.w-variant-b343637e-6926-f2e8-3bf0-555073400c9e) {
     padding: 14px 24px;
     font-size: 18px;
@@ -245,7 +245,7 @@ svg.play-circle{
     text-decoration: none;
   }
   
-  /*Signup Border Customization*/
+  /* SIGN-UP BORDER */
   .button-fill:hover {
       background-image: linear-gradient(50deg, #959595, #676565);
       cursor: pointer;
@@ -259,7 +259,7 @@ svg.play-circle{
     background-clip: text;
   }
   
-  /* SPACE BETWEEN MAIN INFO*/
+  /* SPACE BETWEEN MAIN INFO */
   .hero-section {
      z-index: 5;
      padding-top: 80px;
@@ -267,7 +267,7 @@ svg.play-circle{
      position: relative;
   }
   
-  /* Section with Welcome and Sign up*/
+  /* SECTION WITH WELCOME */
   .hero-layout {
      grid-column-gap: 60px;
      grid-row-gap: 60px;

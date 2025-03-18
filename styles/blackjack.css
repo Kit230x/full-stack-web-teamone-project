@@ -48,7 +48,7 @@ body {
   padding: 0 20px;
 }
 
-/* NAV BAR STYLES*/ 
+/* NAV BAR STYLES */ 
 .navbar {
   z-index: 9999;
   position: sticky;
@@ -100,7 +100,7 @@ body {
   text-decoration: none; 
 }
 
-/* SIGN-UP DOES NOT CONTAIN button-fill*/
+/* SIGN-UP DOES NOT CONTAIN button-fill */
 .button-fill:where(.w-variant-b343637e-6926-f2e8-3bf0-555073400c9e) {
   padding: 14px 24px;
   font-size: 18px;
@@ -110,7 +110,7 @@ body {
   text-decoration: none;
 }
 
-/*Signup Border Customization (Specific to Signup) */
+/* Signup Border Customization (Specific to Signup) */
 .button-fill:where(.w-variant-b343637e-6926-f2e8-3bf0-555073400c9e):hover {
   background-image: linear-gradient(50deg, #959595, #676565);
   cursor: pointer;
@@ -166,7 +166,7 @@ body {
   margin: 0 auto 20px;
 }
 
-/*GAME AREA STYLES*/
+/* GAME AREA STYLES */
 .game-header h1 {
   font-weight: 700;
   font-size: 24px;
